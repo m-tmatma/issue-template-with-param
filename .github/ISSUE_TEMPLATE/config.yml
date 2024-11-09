@@ -1,0 +1,35 @@
+# .github/ISSUE_TEMPLATE/config.yml
+
+blank_issues_enabled: false  # 空のIssueを許可しない場合
+contact_links:
+  - name: サポート
+    url: https://example.com/support
+    about: 質問やサポートが必要な場合はこちらをご利用ください。
+
+issue_templates:
+  - name: バグ報告
+    description: ソフトウェアのバグを報告するためのテンプレート
+    labels: ["bug", "urgent"]
+    title: "[バグ] 問題の概要"
+    body:
+      - type: markdown
+        attributes:
+          value: "## バグの説明\n発生している問題の概要と詳細を記入してください。"
+      - type: textarea
+        id: description
+        attributes:
+          label: "バグの詳細"
+          description: "バグの詳細情報を記載してください。"
+      - type: dropdown
+        id: priority
+        attributes:
+          label: "優先度"
+          options:
+            - 高
+            - 中
+            - 低
+
+  - name: 機能リクエスト
+    description: 新しい機能や改善のリクエストを提出するためのテンプレート
+    labels: ["feature", "enhancement"]
+    title: "[機能リクエスト] 提案の概要"
