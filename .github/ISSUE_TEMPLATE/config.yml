@@ -1,11 +1,5 @@
 # .github/ISSUE_TEMPLATE/config.yml
 
-blank_issues_enabled: false  # 空のIssueを許可しない場合
-contact_links:
-  - name: サポート
-    url: https://example.com/support
-    about: 質問やサポートが必要な場合はこちらをご利用ください。
-
 issue_templates:
   - name: バグ報告
     description: ソフトウェアのバグを報告するためのテンプレート
